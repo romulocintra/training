@@ -1,0 +1,53 @@
+/* Fade */
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s; }
+
+.ng-enter {
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s; }
+
+.ng-leave {
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s; }
+
+/* Slide */
+body {
+  overflow-x: hidden; }
+
+.myslide.ng-enter,
+.myslide.ng-leave {
+  position: absolute;
+  transition: .3s linear all; }
+
+.myslide.ng-enter {
+  left: 100%; }
+
+.myslide.ng-enter-active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%); }
+
+.myslide.ng-leave-active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%); }

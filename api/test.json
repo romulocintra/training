@@ -1,0 +1,31 @@
+[{
+    "name": "Tony",
+    "office": "Barcelona",
+    "active": true,
+    "role": "developer",
+    "age": 29
+}, {
+    "name": "Maria",
+    "office": "Valencia",
+    "active": true,
+    "role": "marketing",
+    "age": 34
+}, {
+    "name": "Peter",
+    "office": "Warsaw",
+    "active": true,
+    "role": ".net Developer",
+    "age": 21
+}, {
+    "name": "Richard",
+    "office": "Lleida",
+    "active": true,
+    "role": "Angular Teach",
+    "age": 40
+}, {
+    "name": "Anna",
+    "office": "Lleida",
+    "active": true,
+    "role": "Developer",
+    "age": 23
+}]

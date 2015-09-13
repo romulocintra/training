@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<div class="container" scrolly-scroll>
+    <div class="well">
+        <p class="lead">
+            >NG-MODEL
+        </p>
+        <h4>Training in : {{place}}</h4>
+        <p class="pull-left">&nbsp;&nbsp;{{name}}</p>
+        <br>
+
+        <input type="text" class="form-control" ng-model="name" placeholder="{{name}}">
+        </input>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+    <div class="well">
+        <p class="lead">
+            NG-CLICK
+        </p>
+        <form name="clickFORM">
+            <span ng-class="{'text-danger':sameName , 'text-success': !sameName}" ng-if="showMessage">{{message}}</span>
+            <input ng-change="showMessage=false" type="text" class="form-control" ng-model="form.name" placeholder="{{name}}" required>
+            </input>
+        </form>
+        <p>
+
+            <button class="button btn-default" ng-disabled="clickFORM.$invalid" ng-click="changeName(form.name)">
+                Change my name Please
+            </button>
+        </p>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+
+    <div class="well">
+        <p class="lead">
+            NG-REPEAT
+        </p>
+        <input ng-model="formfilter"></input>
+        <!--  <input ng-model="formfilter.name"></input>  -->
+        <ul>
+            <li ng-repeat="student in students | orderBy:'name' | filter:formfilter ">
+                {{student.name}}
+            </li>
+        </ul>
+
+        <div class="clearfix "></div>
+    </div>
+
+
+
+
+
+
+
+
+</div>

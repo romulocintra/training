@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "grid.css",
+	"sources": [
+		"../../app/styles/grid.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA,UAAU,CAAC;EACP,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,OAAG;EACrB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,KAAM,GAHN",
+	"names": []
+}
