@@ -38,7 +38,7 @@ angular.module('trainingApp')
                 //////////////////////////
 
                 // We must configure states using $stateProvider.
-                $stateProvider.state('detection', {url: '/detection',templateUrl: 'views/detection/detection.html',controller: 'detectionController'}).state('webworkers', {url: '/webworkers',templateUrl: 'views/webworkers/webworkers.html',controller: 'webworkersController'}).state('translate', {url: '/translate',templateUrl: 'views/translate/translate.html',controller: 'translateController'}).state('studentsHTTP', {url: '/studentsHTTP',templateUrl: 'views/studentsHTTP/studentsHTTP.html',controller: 'studentsHTTPController'}).state('students', {url: '/students',templateUrl: 'views/students/students.html',controller: 'studentsController'})
+                $stateProvider.state('websocket', {url: '/websocket',templateUrl: 'views/websocket/websocket.html',controller: 'websocketController'}).state('detection', {url: '/detection',templateUrl: 'views/detection/detection.html',controller: 'detectionController'}).state('webworkers', {url: '/webworkers',templateUrl: 'views/webworkers/webworkers.html',controller: 'webworkersController'}).state('translate', {url: '/translate',templateUrl: 'views/translate/translate.html',controller: 'translateController'}).state('studentsHTTP', {url: '/studentsHTTP',templateUrl: 'views/studentsHTTP/studentsHTTP.html',controller: 'studentsHTTPController'}).state('students', {url: '/students',templateUrl: 'views/students/students.html',controller: 'studentsController'})
 
                 //////////
                 // Examples //

@@ -23,7 +23,7 @@
         'appverse.logging',
         'appverse.performance',
         'appverse.translate',
-        'pascalprecht.translate',
+        //'pascalprecht.translate',
         'appverse'
     ]).run(function ($log ,   $translate) {
         $log.debug('trainingApp run');
