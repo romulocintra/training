@@ -33,12 +33,12 @@ angular.module('App.Controllers')
         $scope.name = "Student HTTP Service";
         $scope.showEdit = false;
         // Students List
-        $scope.students;
+        var students = Restangular.all('test');
 
-        Restangular.all('test').getList().then(function (students) {
-            $scope.students = students;
-        })
-
+        students.getList().then(function (data) {
+            console.info(data);
+            $scope.students = data;
+        });
 
         /*
         Using Http
@@ -58,32 +58,53 @@ angular.module('App.Controllers')
 
 
         // Edit Studen
-        $scope.editStudent = function (index) {
-            $scope.EditFORM = angular.copy($scope.students);
-            $scope.stdIndex = index;
+        $scope.editStudent = function (student) {
+            console.log(student);
+            $scope.EditFORM = student; //angular.copy($scope.students);
+            //$scope.stdIndex = index;
             $scope.showEdit = true;
 
-        }
+        };
 
         // Remove Student
-        $scope.removeStudent = function (index) {
-            $scope.students.splice(index, 1);
-        }
+        $scope.removeStudent = function (student, index) {
+            student.remove().then(function (success) {
+                    console.log('Correct remove user', success);
+                    $scope.students.splice(index, 1);
+                },
+                function (err) {
+                    console.log(err);
+                });
+
+
+        };
 
         // Remove Student
         $scope.CancelEdit = function () {
             $scope.EditFORM = angular.copy($scope.students);
-        }
+        };
 
         // Update Student
-        $scope.udpateStudent = function () {
-            $scope.students = angular.copy($scope.EditFORM);
-        }
+        $scope.udpateStudent = function (student) {
+            console.log(student);
+            student.put();
+            //$scope.students = angular.copy($scope.EditFORM);
+        };
 
         // Add Student
         $scope.addStudent = function (newStudent) {
-            $scope.students.push(newStudent);
+            $scope.students.post(newStudent).then(
+                function (sucess) {
+                    console.log('Added On Server', sucess);
+                    $scope.students.push(newStudent);
+                    $scope.$digest();
+                },
+                function (error) {
+                    console.log(error);
+                }
+            );
 
-        }
+
+        };
     }
 ]);

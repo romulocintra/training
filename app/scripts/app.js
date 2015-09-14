@@ -31,7 +31,10 @@
         environment: {
             'REST_CONFIG': {
                 'BaseUrl': '/api',
-                'RequestSuffix': ''
+                'RequestSuffix': '',
+                'MockBackend': false
+
+
             },
             'SERVERPUSH_CONFIG': {
                 'BaseUrl': 'http://127.0.0.1:3000'
