@@ -23,21 +23,24 @@
         'appverse.logging',
         'appverse.performance',
         'appverse.translate',
+        'pascalprecht.translate',
         'appverse'
-    ]).run(function ($log) {
+    ]).run(function ($log ,   $translate) {
         $log.debug('trainingApp run');
+            $translate.uses('es-ES');
     });
     AppInit.setConfig({
         environment: {
             'REST_CONFIG': {
                 'BaseUrl': '/api',
                 'RequestSuffix': '',
-                'MockBackend': false
-
 
             },
             'SERVERPUSH_CONFIG': {
                 'BaseUrl': 'http://127.0.0.1:3000'
+            },
+            'I18N_CONFIG': {
+                LocaleFilePattern: 'bower_components/angular-i18n/angular-locale_{{locale}}.js'
             }
         },
         appverseMobile: {},
