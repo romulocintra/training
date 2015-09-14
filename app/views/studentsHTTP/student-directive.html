@@ -1,0 +1,101 @@
+<div class="btn-group btn-group-toggle btn-group-justified">
+    <a ng-click="showEdit=true" ng-class="{active:showEdit }" class="btn btn-lg btn-default">Edit User</a>
+    <a ng-click="showEdit=false" ng-class="{active:!showEdit }" class="btn btn-lg btn-default">Add USer</a>
+</div>
+<div class="well clearfix">
+
+    <div ng-if="showEdit">
+        <p class="lead">
+            Edit Students {{editFORM}}
+        </p>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Name
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="EditFORM.name" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Role
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="EditFORM.role" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Age
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="EditFORM.age" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Office
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="EditFORM.office" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group pull-right">
+            <button class="btn btn-default btn-sm " type="button" ng-click="CancelEdit()">Cancel</button>
+            <button class="btn btn-sm  btn-success " type="button" ng-click="udpateStudent(EditFORM)">Accept</button>
+
+        </div>
+    </div>
+
+    <div ng-if="!showEdit" class="">
+        <p class="lead">
+            Add Students
+        </p>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Name
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="newStudent.name" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Role
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="newStudent.role" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Age
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="newStudent.age" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">
+                Office
+            </label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="newStudent.office" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group pull-right">
+            <button class="btn btn-default btn-sm " type="button" ng-click="newStudent=''">Cancel</button>
+            <button class="btn btn-sm  btn-success " type="button" ng-click="addStudent(newStudent); newStudent=''">Add Student</button>
+
+        </div>
+    </div>
+
+</div>

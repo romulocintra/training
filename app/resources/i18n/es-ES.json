@@ -1,0 +1,6 @@
+{
+    "CURSO_WELCOME" : "Bienvenido To Appverse Training",
+    "WELCOME": "Bienvenido!",
+    "WELCOME_NAME": "Bienvenido {{name}} !",
+    "WELCOME_NAME_AGE": "Bienvenido {{name}}, tienes {{age}} año(s) !"
+}
