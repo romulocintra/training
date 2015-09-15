@@ -23,11 +23,11 @@
         'appverse.logging',
         'appverse.performance',
         'appverse.translate',
-        //'pascalprecht.translate',
+          //'pascalprecht.translate',
         'appverse'
-    ]).run(function ($log ,   $translate) {
+    ]).run(function ($log, $translate) {
         $log.debug('trainingApp run');
-            $translate.uses('es-ES');
+        $translate.uses('es-ES');
     });
     AppInit.setConfig({
         environment: {

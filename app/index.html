@@ -98,7 +98,15 @@
                         </li>
                     </ul>
                 </li>
-            <li class="dropdown"><a angular-ripple="" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-list-alt"></i> Components<span class="caret"></span></a><ul class="dropdown-menu"><li data-ng-class="{active: $state.includes(&apos;translate&apos;)}"><a angular-ripple="" ui-sref="translate">translate</a></li><li data-ng-class="{active: $state.includes(&apos;webworkers&apos;)}"><a angular-ripple="" ui-sref="webworkers">webworkers</a></li><li data-ng-class="{active: $state.includes(&apos;detection&apos;)}"><a angular-ripple="" ui-sref="detection">detection</a></li><li data-ng-class="{active: $state.includes(&apos;websocket&apos;)}"><a angular-ripple="" ui-sref="websocket">websocket</a></li></ul></li></ul>
+                <li class="dropdown"><a angular-ripple="" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-list-alt"></i> Components<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li data-ng-class="{active: $state.includes(&apos;translate&apos;)}"><a angular-ripple="" ui-sref="translate">translate</a></li>
+                        <li data-ng-class="{active: $state.includes(&apos;webworkers&apos;)}"><a angular-ripple="" ui-sref="webworkers">webworkers</a></li>
+                        <li data-ng-class="{active: $state.includes(&apos;detection&apos;)}"><a angular-ripple="" ui-sref="detection">detection</a></li>
+                        <li data-ng-class="{active: $state.includes(&apos;websocket&apos;)}"><a angular-ripple="" ui-sref="websocket">websocket</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
 
     </nav>
@@ -153,6 +161,8 @@
     <script src="bower_components/appverse-web-html5-core/dist/appverse-translate/appverse-translate.min.js"></script>
     <!-- SERVER PUSH MODULE -->
     <script src="bower_components/socket.io-client/dist/socket.io.min.js"></script>
+    <script src="bower_components/angular-socket-io/socket.js"></script>
+
     <script src="bower_components/appverse-web-html5-core/dist/appverse-serverpush/appverse-serverpush.min.js"></script>
     <!-- REST MODULE -->
     <script src="bower_components/lodash/lodash.min.js"></script>

@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="PhantomJS 1.9.8 (Linux)" package="" timestamp="2015-09-12T14:56:37" id="0" hostname="rr-ubuntu">
+  <testsuite name="Chrome 45.0.2454 (Windows 7)" package="" timestamp="2015-09-15T14:12:09" id="0" hostname="PCBCN1206">
     <properties>
-      <property name="browser.fullName" value="Mozilla/5.0 (Unknown; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"/>
     </properties>
   </testsuite>
-  <testsuite name="PhantomJS 1.9.8 (Linux)" package="" timestamp="2015-09-12T14:56:38" id="0" hostname="rr-ubuntu" tests="1" errors="0" failures="0" time="0.018">
+  <testsuite name="Chrome 45.0.2454 (Windows 7)" package="" timestamp="2015-09-15T14:12:09" id="0" hostname="PCBCN1206" tests="17" errors="1" failures="0" time="0">
     <properties>
-      <property name="browser.fullName" value="Mozilla/5.0 (Unknown; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"/>
     </properties>
-    <testcase name="should have a properly working homeController controller" time="0.018" classname="PhantomJS 1.9.8 (Linux).Unit: Testing Controllers"/>
     <system-out><![CDATA[
 ]]></system-out>
     <system-err/>
